@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Harbor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: purple;
+        }
+/* rgb(40, 20, 75); */
+        header {
+            background-color: white;
+            color: black;
+            padding: 1em;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        section {
+            max-width: 800px;
+            max-height: fit-content;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 200;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .flex-item {
+            width: 10em;
+            height: 13em;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgb(2, 100, 100);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .flex-item:hover {
+            transform: scale(1.1);
+        }
+
+        .flex-item p {
+            margin: 10px 0 0;
+        }
+        button:hover{
+    transform: scale(1.1);
+}
+
+        #logo {
+            width: 170px;
+            height: 100px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            padding: 10px;
+        }
+        form {
+  display: flex;
+  margin-top: 10px;
+  
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 8px;
+  background-color: purple;
+  color: white;
+  border: solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="project logo.png" alt="logo" id="logo">
+        <h1>Gift Harbor</h1>
+        
+        <h3>
+        <form action="/search" method="GET">
+            <input type="text" name="q" placeholder="Search for gifts...">
+            <button type="submit">Search</button>
+          </form>
+          </h3>
+        <nav>
+            <a href="registration.html"><p1>New user?</p1></a>
+            <br><a href="loginpage.html"><p2>Already a user?</p2></a>
+            
+        </nav>
+        
+          
+        
+    </header>
+
+
+    <section>
+        <h2>Welcome to Gift Harbor!</h2>
+        <p>
+            Welcome to Gift Harbor, where the art of gifting meets the ease of recommendation.
+            <br>Finding the perfect gift has never been this delightful.
+            <br>Let us guide you through a world of thoughtful surprises for every occasion.
+        </p>
+    </section>
+  
+
+    <div class="flex-container">
+        <a href="male_gifts.html">
+            <div class="flex-item">
+                <img src="man gift.jpg" alt="Image 1" height="180" width="160">
+                <p style="color: white;">Gifts for Men</p>
+            </div>
+        </a>
+        <a href="female_gifts.html">
+        <div class="flex-item">
+            <img src="female pic.jpg" alt="Image 2" height="180" width="160">
+            <p style="color: white;">Gifts for Women</p>
+        </div>
+        </a>
+        <a href="child_gifts.html">
+        <div class="flex-item">
+            <img src="child gift.jpg" alt="Image 3" height="180" width="160">
+            <p style="color: white;">Gifts for Kids</p>
+        </div>
+        </a>
+    </div>
+    <section class="occasion">
+        
+    </section>
+
+    <footer>
+        <nav>
+        <button ><a href="enhance.html" >Home</a></button>
+        </nav>
+        <p>&copy; 2023 Gift Harbor. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
